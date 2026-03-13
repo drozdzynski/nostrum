@@ -57,6 +57,7 @@ defmodule Nostrum.Mixfile do
         Nostrum.Cache.ChannelGuildMapping,
         Nostrum.Cache.GuildCache,
         Nostrum.Cache.MemberCache,
+        Nostrum.Cache.MessageCache,
         Nostrum.Cache.PresenceCache,
         Nostrum.Cache.UserCache,
         Nostrum.Constants,

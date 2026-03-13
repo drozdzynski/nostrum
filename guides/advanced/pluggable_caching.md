@@ -40,8 +40,9 @@ not installed with OTP.
 
 Caching based on `:ets` is used by default. No configuration is required. Fast,
 light on memory, but does not support any form of distribution or secondary
-indexing: queries such as fetching all guild members for a guild by its ID will
-perform a full table scan. For smaller bots, this is perfectly acceptable.
+indexing: only the standard lookups done by nostrum via the `get` functions are
+optimized, custom queries, if used, may perform a full table scan. For smaller
+bots, this is perfectly acceptable.
 
 
 ### Mnesia caching
