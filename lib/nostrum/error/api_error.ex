@@ -11,7 +11,7 @@ defmodule Nostrum.Error.ApiError do
     :response
   ]
 
-  @type t :: %{
+  @type t :: %__MODULE__{
           status_code: status_code,
           response: response
         }
